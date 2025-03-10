@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindn Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="nav-left">
+            <a href="./index.html" class="logo"><img src="./images/logo.png"></a>
+            <div class="search-box">
+                <img src="./images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="nav-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="./images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="./images/network.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="./images/jobs.png"><span>jobs</span></a></li>
+                <li><a href="#"><img src="./images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="./images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="online">
+                <img src="./images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+           
+        </div>
+
+    
+    <!---------profile-dropdown menu------------->
+
+    <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+            <div class="user-info">
+                <img src="./images/user-1.png">
+                <div>
+                    <h3>Rayan Walton</h3>
+                    <a href="./profile.html">See Your Profile</a>
+                </div>
+            </div>
+            <hr>
+            <a href="#" class="profile-menu-link">
+                <img src="./images/feedback.png">
+                <p>Give feedback</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="./images/setting.png">
+                <p>settings & privacy</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="./images/help.png">
+                <p>help and support</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="./images/display.png">
+                <p>display & Accessibility</p>
+                <span>></span>
+            </a>
+            <a href="#" class="profile-menu-link">
+                <img src="./images/logout.png">
+                <p>logout</p>
+                <span>></span>
+            </a>
+        </div>
+    </div>
+
+    </nav>
+
+    <!--navbar closed-------------------->
+
+    <div class="container">
+        <!--left sidebar-->
+        <div class="left-sidebar">
+            <div class="side-bar-profile-box">
+                <img src="./images/cover-pic.png" width="100%">
+               <div class="sidebar-profile-info">
+                <img src="./images/user-1.png">
+                <h1>Alan Walker</h1>
+                <h3>Web developer at microsoft</h3>
+                <ul>
+                    <li>your profile views <span>52</span></li>
+                    <li>your post views <span>810</span></li>
+                    <li>your connections views <span>252</span></li>
+                </ul>
+               </div>
+
+               <div class="sidebar-profile-link">
+                <a href="#"><img src="./images/items.png"> items</a>
+                <a href="#"><img src="./images/premium.png"> premium</a>
+               </div>
+
+               
+            </div>
+
+
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="images/recent.png"> Web development</a>
+                <a href="#"><img src="images/recent.png"> User interface</a>
+                <a href="#"><img src="images/recent.png"> Online learning</a>
+                <a href="#"><img src="images/recent.png"> Code Better</a>
+                <a href="#"><img src="images/recent.png"> Group learning</a>
+                <h3>Groups</h3>
+                <a href="#"><img src="images/group.png">Web design Group</a>
+                <a href="#"><img src="images/group.png">Html and Css Learners</a>
+                <a href="#"><img src="images/group.png">Python And Javascript Group</a>
+                <a href="#"><img src="images/group.png">learn Coding Online</a>
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png">Web development</a>
+                <a href="#"><img src="images/hashtag.png">User Interface</a>
+                <a href="#"><img src="images/hashtag.png">online learning</a>
+
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+
+                </div>
+                
+            </div>
+
+            <p id="ShowMoreLink" onclick="toggleActivity()">Show more <b>+</b></p>
+
+
+        </div>
+
+
+        <!--main content-->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-container">
+                    <img src="./images/user-1.png">
+                    <textarea rows="2" placeholder="Write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="./images/photo.png">Photo</li>
+                    <li><img src="./images/video.png">video</li>
+                    <li><img src="./images/event.png">event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+
+            <div class="sort-by">
+                <hr>
+                <p>Sort By: <span>top <img src="./images/down-arrow.png"></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-3.png">
+                    <div>
+                        <h1>Kate Ben</h1>
+                        <small> Founder and CEO 2jay Graphics| Mubarak Developer 2Hours Ago</small>
+                    </div>
+                </div>
+
+                <p>the success of every website depends on search engine optimisation and digital
+                    marketing strategy. if you are on first page of all major search engines then you
+                    are ahead among your competitors.</p>
+                    <img src="./images/post-image-1.png" width="100%">
+
+                    <div class="post-stats">
+                        <div>
+                            <img src="./images/thumbsup.png">
+                            <img src="./images/love.png">
+                            <img src="./images/clap.png">
+                            <span class="liked-user">Abhinav Mishara and 75 others</span>
+                        </div>
+                        
+                      <div>
+                        <span>22 &middot; 40 shares</span>
+                      </div>
+                      </div>
+
+                      <div class="post-activity">
+                        <div >
+                            <img src="./images/user-1.png" class="post-activity-user-icon">
+                            <img src="./images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/like.png">
+                            <span>like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/comment.png">
+                            <span>comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/share.png">
+                            <span>share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/send.png">
+                            <span>send</span>
+                        </div>
+
+
+                      </div>
+
+
+                
+            </div>
+            
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-4.png">
+                    <div>
+                        <h1>Clarence george</h1>
+                        <small> Founder and CEO 2jay Graphics| Mubarak Developer 2Hours Ago</small>
+                    </div>
+                </div>
+
+                <p>the success of every website depends on search engine optimisation and digital
+                    marketing strategy. if you are on first page of all major search engines then you
+                    are ahead among your competitors.</p>
+                    <img src="./images/post-image-2.png" width="100%">
+
+                    <div class="post-stats">
+                        <div>
+                            <img src="./images/thumbsup.png">
+                            <img src="./images/love.png">
+                            <img src="./images/clap.png">
+                            <span class="liked-user">Abhinav Mishara and 75 others</span>
+                        </div>
+                        
+                      <div>
+                        <span>22 &middot; 40 shares</span>
+                      </div>
+                      </div>
+
+                      <div class="post-activity">
+                        <div >
+                            <img src="./images/user-2.png" class="post-activity-user-icon">
+                            <img src="./images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/like.png">
+                            <span>like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/comment.png">
+                            <span>comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/share.png">
+                            <span>share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/send.png">
+                            <span>send</span>
+                        </div>
+
+
+                      </div>
+
+
+                
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-4.png">
+                    <div>
+                        <h1>Clarence george</h1>
+                        <small> Founder and CEO 2jay Graphics| Mubarak Developer 2Hours Ago</small>
+                    </div>
+                </div>
+
+                <p>the success of every website depends on search engine optimisation and digital
+                    marketing strategy. if you are on first page of all major search engines then you
+                    are ahead among your competitors.</p>
+                    <img src="./images/post-image-3.png" width="100%">
+
+                    <div class="post-stats">
+                        <div>
+                            <img src="./images/thumbsup.png">
+                            <img src="./images/love.png">
+                            <img src="./images/clap.png">
+                            <span class="liked-user">Abhinav Mishara and 75 others</span>
+                        </div>
+                        
+                      <div>
+                        <span>22 &middot; 40 shares</span>
+                      </div>
+                      </div>
+
+                      <div class="post-activity">
+                        <div >
+                            <img src="./images/user-2.png" class="post-activity-user-icon">
+                            <img src="./images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/like.png">
+                            <span>like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/comment.png">
+                            <span>comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/share.png">
+                            <span>share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/send.png">
+                            <span>send</span>
+                        </div>
+
+
+                      </div>
+
+
+                
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="./images/user-5.png">
+                    <div>
+                        <h1>Clarence george</h1>
+                        <small> Founder and CEO 2jay Graphics| Mubarak Developer 2Hours Ago</small>
+                    </div>
+                </div>
+
+                <p>the success of every website depends on search engine optimisation and digital
+                    marketing strategy. if you are on first page of all major search engines then you
+                    are ahead among your competitors.</p>
+                    <img src="./images/post-image-4.png" width="100%">
+
+                    <div class="post-stats">
+                        <div>
+                            <img src="./images/thumbsup.png">
+                            <img src="./images/love.png">
+                            <img src="./images/clap.png">
+                            <span class="liked-user">Abhinav Mishara and 75 others</span>
+                        </div>
+                        
+                      <div>
+                        <span>22 &middot; 40 shares</span>
+                      </div>
+                      </div>
+
+                      <div class="post-activity">
+                        <div >
+                            <img src="./images/user-2.png" class="post-activity-user-icon">
+                            <img src="./images/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/like.png">
+                            <span>like</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/comment.png">
+                            <span>comment</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/share.png">
+                            <span>share</span>
+                        </div>
+                        <div class="post-activity-link">
+                            <img src="./images/send.png">
+                            <span>send</span>
+                        </div>
+
+
+                      </div>
+
+
+                
+            </div>
+            
+        </div>
+
+
+
+
+
+
+        <!--right sidebar-->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="./images/more.png" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">high demand for skilled man power</a>
+                <span>1d ago &middot; 134 readers</span>
+
+                <a href="#">Careers growing horizontally</a>
+                <span>1d ago &middot; 1,934 readers</span>
+
+                <a href="#">less work visa for US, more for uk</a>
+                <span>1d ago &middot; 904 readers</span>
+                
+                <a href="#">More hirring = higher confidence?</a>
+
+                <a href="#">Jeff Bezzos is 2nd world richest man.</a>
+                <span>1d ago &middot; 1,000 readers</span> <br>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of web designing</p>
+                <div>
+                    <img src="./images/user-1.png">
+                    <img src="./images/mi-logo.png">
+                </div>
+                <b>Brand and demand in xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+               
+            </div>
+
+            <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">privacy policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get The App</a>
+                <a href="#">More</a>
+
+                <div class="copy-right-message">
+                    <img src="./images/logo.png">
+                    <p>Linkedup &#169; 2025 All right reserved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
